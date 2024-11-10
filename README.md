@@ -1,2 +1,1 @@
-# BlindAid
-# BlindAid
+# Model For Blind User
