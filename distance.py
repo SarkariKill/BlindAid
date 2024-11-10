@@ -4,7 +4,7 @@ from ultralytics import YOLO
 import threading
 
 # Load the pre-trained YOLOv8 model
-model = YOLO('yolov8s.pt')
+model = YOLO('yolov8n.pt')
 
 # Function to calculate distance in cm using the pinhole camera model
 def calculate_distance_cm(focal_length, real_object_width, object_width_in_image):
