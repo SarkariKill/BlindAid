@@ -1,0 +1,17 @@
+Step 1: In "distance.py", we are using the pinhole camera model to 
+estimate the distance of an object (person) from the camera based 
+on the perceived width of the object in the camera’s frame.
+
+Distance = ((W * f)/w) * 100
+
+Where:
+
+W: The known actual width of the object (approximated as 45 cm for a human).
+f: The focal length of the camera (approximated as 700).
+w: The width of the object in the image frame (calculated from bounding box coordinates).
+The "-10" at the end is a small adjustment based on testing to improve the accuracy of the estimation.
+
+Step 2:  In object.py, we are adding more objects for detection to enhance the model’s 
+utility for a visually impaired user. To increase the usability of the system, we've expanded 
+the dataset by including 15 more commonly encountered objects and their real-world widths. 
+These objects are essential for helping the blind or visually impaired to navigate their surroundings safely.
